@@ -1,0 +1,14 @@
+{
+  "name": "com.florisdev.unity-extensions",
+  "version": "1.0.0",
+  "displayName": "FlorisDeV Unity Extensions",
+  "description": "Unity extensions and helper methods",
+  "unity": "2021.3",
+  "unityRelease": "6f1",
+  "author": {
+    "name": "FlorisDeV",
+    "email": "florisdev.me@gmail.com",
+    "url": "https://florisdev.me"
+  },
+  "type": "library"
+}
