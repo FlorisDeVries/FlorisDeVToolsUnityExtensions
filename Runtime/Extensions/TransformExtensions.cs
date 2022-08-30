@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace FlorisDeVToolsUnityExtensions.Extensions
 {
@@ -16,5 +18,17 @@ namespace FlorisDeVToolsUnityExtensions.Extensions
                 DisableRenderersRecursive(child);
             }
         }
+
+        public static List<Transform> GetChildren(this Transform parent)
+        {
+            var children = new List<Transform>();
+            for (var i = 0; i < parent.childCount; i++)
+            {
+                children.Add(parent.GetChild(i));
+            }
+
+            return children;
+        }
+        
     }
 }
